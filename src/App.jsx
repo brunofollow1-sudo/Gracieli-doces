@@ -1,40 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react"
 
-/* ─── GOOGLE FONTS ──────────────────────────────────────────────────────────── */
-const FontLink = () => (
-  <style>{`
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #fff5f7; }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes pulse {
-      0%,100% { transform: scale(1); }
-      50%      { transform: scale(1.06); }
-    }
-    @keyframes shimmer {
-      0%   { background-position: -400px 0; }
-      100% { background-position: 400px 0; }
-    }
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(360deg); }
-    }
-    .fadeUp { animation: fadeUp 0.5s ease forwards; }
-    .pulse  { animation: pulse 2s ease infinite; }
-
-    input:focus, textarea:focus, select:focus {
-      outline: none;
-      border-color: #e8789a !important;
-      box-shadow: 0 0 0 3px rgba(232,120,154,0.15);
-    }
-
-    .product-card:hover {
-      transform: translateY(-4px);
+export default function App() {
+  return (
+    <div style={{textAlign:"center", padding:40, fontFamily:"sans-serif"}}>
+      <h1 style={{color:"#c94e78"}}>🍫 Gracieli Doces</h1>
+      <p>App funcionando!</p>
+    </div>
+  )
+}      transform: translateY(-4px);
       box-shadow: 0 12px 40px rgba(220,90,130,0.18) !important;
     }
     .order-card:hover {
